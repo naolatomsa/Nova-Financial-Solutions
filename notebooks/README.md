@@ -64,3 +64,25 @@ Run the Notebook:
         TextBlob, NLTK: Sentiment analysis.
         sklearn, gensim: Topic modeling.
         wordcloud: Generate word clouds.
+
+
+# Quantitative analysis
+
+This notebook analyzes stock price data by calculating technical indicators and financial metrics, and visualizing trends for better insights.
+
+## Features
+
+    Calculates technical indicators:
+        Simple Moving Average (SMA)
+        Relative Strength Index (RSI)
+        Moving Average Convergence Divergence (MACD)
+    Computes financial metrics:
+        Daily Returns
+        Cumulative Returns
+    Visualizes stock trends and key indicators.
+
+## Usage
+
+    Ensure your dataset includes Open, High, Low, Close, and Volume columns.
+    Replace the sample data loading function with your dataset.
+    Run the notebook to calculate metrics and generate visualizations.
