@@ -13,8 +13,11 @@ def load_data(news_path, stock_path):
 
 # Normalize and Align Dates
 def normalize_dates(news_data, stock_data):
+    news_data['date'] = pd.to_datetime(news_data['date'], errors='coerce', utc=True)
+    # news_data['date'] = pd.to_datetime(news_data['date'], format="%Y-%m-%d %H:%M:%S")
+    # stock_data['date'] = pd.to_datetime(stock_data['date'], format="%Y-%m-%d %H:%M:%S")
 
-    news_data['Date'] = pd.to_datetime(news_data['Date']).dt.date
+    news_data['date'] = pd.to_datetime(news_data['date']).dt.date
     stock_data['Date'] = pd.to_datetime(stock_data['Date']).dt.date
     return news_data, stock_data
 
@@ -24,7 +27,7 @@ def analyze_sentiment(news_data):
     def get_sentiment(text):
         return TextBlob(text).sentiment.polarity
     
-    news_data['Sentiment'] = news_data['Headline'].apply(get_sentiment)
+    news_data['Sentiment'] = news_data['headline'].apply(get_sentiment)
     return news_data
 
 # Aggregate Sentiments by Date
