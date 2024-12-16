@@ -1,4 +1,4 @@
-# News Data Analysis Project
+# Task 1 News Data Analysis Project
 
 This repository contains the code and analysis for exploring and analyzing news datasets. The project focuses on Exploratory Data Analysis (EDA), text analysis, time series analysis, and publisher insights.
 Project Overview
@@ -66,7 +66,7 @@ Run the Notebook:
         wordcloud: Generate word clouds.
 
 
-# Quantitative analysis
+# Task 2 Quantitative analysis
 
 This notebook analyzes stock price data by calculating technical indicators and financial metrics, and visualizing trends for better insights.
 
@@ -86,3 +86,29 @@ This notebook analyzes stock price data by calculating technical indicators and 
     Ensure your dataset includes Open, High, Low, Close, and Volume columns.
     Replace the sample data loading function with your dataset.
     Run the notebook to calculate metrics and generate visualizations.
+
+
+
+# Task 3: Correlation Between News and Stock Movement
+
+# Objective
+
+Analyze the relationship between news sentiment and stock price movements.
+
+# Steps
+
+    Data Alignment: Normalize dates in news and stock datasets.
+    Sentiment Analysis: Assign sentiment scores (Positive, Negative, Neutral) to news headlines using tools like TextBlob.
+    Stock Returns: Calculate daily percentage changes in closing prices.
+    Correlation: Compute the Pearson correlation coefficient between average daily sentiment scores and stock returns.
+
+# Development
+
+    Create a task-3 branch for development.
+    Commit progress with clear messages.
+    Merge updates into main via a Pull Request (PR).
+
+# KPIs
+
+    Sentiment Analysis Accuracy
+    Correlation Strength Analysis
